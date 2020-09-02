@@ -8,7 +8,8 @@ public class CalculatorUtilTest {
 
     @Test
     public void testSetup() {
-        Map<String, Operator> operators = CalculatorUtil.setup();
+        CalculatorUtil calculatorUtil = new CalculatorUtil();
+        Map<String, Operator> operators = calculatorUtil.setup();
         Operator actual = operators.get("+");
 
         Assert.assertNotNull(actual);
